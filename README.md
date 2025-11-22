@@ -93,16 +93,15 @@ http://localhost:8000
 
 ---
 
-## 📷 Screenshots (Optional)
+## 📷 Screenshots 
 
-You may insert screenshots here, for example:
 
-```
-/screenshots/dashboard.png
-/screenshots/performance-graph.png
-/screenshots/student-details.png
-```
-
+<img width="402" height="300" alt="Screenshot 2025-11-23 010540" src="https://github.com/user-attachments/assets/35d5f0f4-f0dc-43d9-823a-bcfb83d5be8f" />
+<img width="420" height="297" alt="Screenshot 2025-11-23 010510" src="https://github.com/user-attachments/assets/0e694b73-8933-4961-bbec-8a91246c0bb6" />
+<img width="415" height="268" alt="Screenshot 2025-11-23 010340" src="https://github.com/user-attachments/assets/9bd63e4f-dbff-4c53-948a-bfba9c5297ab" />
+<img width="433" height="187" alt="Screenshot 2025-11-23 012751" src="https://github.com/user-attachments/assets/6b8362fd-6dcc-4a99-aa36-6ec16f7026ec" />
+<img width="414" height="207" alt="Screenshot 2025-11-23 012744" src="https://github.com/user-attachments/assets/7ff6fb20-341f-47eb-a564-f9826ef2f0b7" />
+<img width="486" height="305" alt="Screenshot 2025-11-23 010554" src="https://github.com/user-attachments/assets/ab40e205-777b-437e-8b4f-978f4267c087" />
 ---
 
 ## © License
@@ -116,3 +115,4 @@ This project is developed for academic purposes as part of the coursework/projec
 **Pratim Ghosh**
 B.Tech CSE (AI & ML)
 Vellore Institute of Technology, Bhopal
+
