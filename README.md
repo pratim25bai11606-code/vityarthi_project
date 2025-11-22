@@ -1,20 +1,118 @@
-Student Performance Predictor & Management System1. Project TitleStudent Performance Predictor & Management System (ViDyarthis)2. Overview of the ProjectThis project is a comprehensive educational management system designed to assist educators and institutions in proactively managing student academic success. The core component is a Machine Learning (ML) model that analyzes historical and behavioral data (e.g., attendance, assignment scores, study hours, demographics) to predict a student's final grade or likelihood of academic risk (e.g., failing a course).Beyond prediction, the system provides a robust administrative interface for:Real-time tracking of student progress.Generating actionable insights and visualizations for teachers.Allowing early intervention strategies to be deployed before performance issues become critical.The goal is to move from reactive grading to proactive academic coaching, ensuring every student has the support they need to succeed.3. FeaturesThe system offers a dual-interface structure (Admin/Teacher Dashboard and Student Portal) with the following key features:A. Prediction & AnalyticsPerformance Prediction: Utilizes a trained ML model (e.g., Random Forest or Gradient Boosting) to predict final course scores or pass/fail status based on current mid-term data.Risk Assessment: Flag students who fall into a high-risk category, allowing for targeted intervention.Data Visualization: Interactive charts (e.g., performance trends, feature importance) to help teachers understand which factors are most impacting student outcomes.B. Management & AdministrationStudent Data Management (CRUD): Interface for adding, updating, and viewing student records, demographics, and enrollment details.Grade & Attendance Tracking: Robust module for recording and calculating grades, weights, and attendance records.User Authentication: Secure login for different roles (Admin, Teacher, Student).C. Student PortalPersonalized Progress View: Students can view their current grades, attendance, and predicted performance score.Feedback & Intervention: Students receive automated, constructive feedback based on the risk assessment.4. Technologies/Tools UsedCategoryTechnology/ToolDescriptionBackendPython (Flask/Django)Primary server-side logic and API development.Machine LearningScikit-learn, Pandas, NumPyModel training, data preprocessing, and prediction generation.DatabasePostgreSQL / MongoDBPersistent storage for student records, grades, and system settings.FrontendReact / Next.jsModern, responsive user interface for the dashboards and portals.StylingTailwind CSSUtility-first CSS framework for fast, responsive design.DeploymentDocker, Heroku/AWSContainerization for reproducible builds and cloud hosting.5. Steps to Install & Run the ProjectThis guide assumes you have Python 3.9+, Node.js, and Docker installed on your system.A. Clone the Repositorygit clone [https://github.com/yourusername/student-performance-predictor.git](https://github.com/yourusername/student-performance-predictor.git)
-cd student-performance-predictor
-B. Setup Backend (Prediction Service)Create a virtual environment:python3 -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-Install dependencies:pip install -r requirements.txt
-Configure environment variables:Create a file named .env in the root directory and add your database configuration, e.g.:DATABASE_URL=postgres://user:password@localhost:5432/vidyarthi_db
-SECRET_KEY=yoursecretkey
-Run migrations and start the server:python manage.py migrate
+# Student Performance Predictor & Management System
+
+## 📌 Overview of the Project
+
+The **Student Performance Predictor & Management System** is a software solution designed to analyze student academic data and predict performance outcomes using data-driven models. It allows educators, administrators, and institutions to track academic progress, identify weak-performing students early, and make informed decisions to improve overall learning outcomes.
+
+The system also functions as a management tool for storing academic records, generating analysis reports, visualizations, and performance insights.
+
+---
+
+## ⭐ Features
+
+* Predicts students' academic performance using machine learning models
+* Stores student profiles and academic records
+* User-friendly dashboard for visualization and reports
+* Automated alerts for academically at-risk students
+* Supports data uploads in spreadsheet format
+* Interactive performance charts and analytics
+* Role-based access (Admin, Faculty)
+* Light-weight UI for easy navigation
+
+---
+
+## 🛠 Technologies / Tools Used
+
+* **Programming Language:** Python
+* **Frameworks & Libraries:**
+
+  * Flask / Django (backend)
+  * Pandas, NumPy
+  * Scikit-Learn (ML algorithms)
+  * Matplotlib / Seaborn / Plotly (visualizations)
+* **Frontend:** HTML, CSS, JavaScript
+* **Database:** SQLite / MySQL
+* **Environment:** Jupyter Notebook / VS Code
+
+---
+
+## ⚙ Steps to Install & Run the Project
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/your-repository-url.git
+cd student-performance-system
+```
+
+### 2️⃣ Create a Virtual Environment (optional but recommended)
+
+```bash
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+```
+
+### 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Run Database Migrations (if any)
+
+```bash
+python manage.py migrate
+```
+
+### 5️⃣ Start the Server
+
+```bash
 python manage.py runserver
-# The API will typically run on [http://127.0.0.1:8000](http://127.0.0.1:8000)
-C. Setup Frontend (Web Dashboard)Navigate to the frontend directory:cd frontend
-Install Node dependencies:npm install
-Start the frontend application:npm start
-# The dashboard will typically open at http://localhost:3000
-6. Instructions for TestingThe project includes unit and integration tests to ensure data integrity and prediction accuracy.A. Unit Tests (Backend)To run the Python unit tests for the core prediction logic and API endpoints:# Ensure your virtual environment is active
-cd .. # Back to the root directory
-python manage.py test
-Expected Output: All tests passed, covering data preprocessing and model inference integrity.B. Integration Tests (Frontend)To run the Jest/Enzyme integration tests for component rendering and state management:cd frontend
-npm run test
-Expected Output: All UI components (login, dashboard, data table) render and interact correctly with mock data.C. Manual Testing - Risk FlaggingLog in as a Teacher/Admin.Navigate to the Student Data section.Manually update the attendance or assignment scores for a student to a very low value (e.g., 20% attendance, 30% assignment average).Navigate to the Prediction Dashboard.Verify: The student's risk level should instantly update to "High Risk" or their Predicted Grade should significantly drop, demonstrating the real-time prediction pipeline functionality.7. Screenshots (Optional but Recommended)
+```
+
+Once the server is running, open the browser and visit:
+
+```
+http://localhost:8000
+```
+
+---
+
+## 🧪 Instructions for Testing
+
+* Login using test credentials (if provided in seed data)
+* Upload a dataset containing student records
+* Run predictive analysis and observe model output
+* Check system dashboards for:
+
+  * Predictions
+  * Data visualizations
+  * Student risk analysis
+* Validate accuracy through real academic results if available
+
+---
+
+## 📷 Screenshots (Optional)
+
+You may insert screenshots here, for example:
+
+```
+/screenshots/dashboard.png
+/screenshots/performance-graph.png
+/screenshots/student-details.png
+```
+
+---
+
+## © License
+
+This project is developed for academic purposes as part of the coursework/project submission.
+
+---
+
+## ✍ Developed By
+
+**Pratim Ghosh**
+B.Tech CSE (AI & ML)
+Vellore Institute of Technology, Bhopal
